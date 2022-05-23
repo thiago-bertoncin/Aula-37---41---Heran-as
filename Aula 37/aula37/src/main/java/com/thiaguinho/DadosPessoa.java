@@ -1,12 +1,12 @@
 package com.thiaguinho;
 
-public class DadosPessoa {
+public abstract class DadosPessoa {
 
     private String nome;
     private String endereco;
     private String telefone;
     private String cpf;
-    
+
     public String getNome() {
         return nome;
     }
@@ -32,5 +32,8 @@ public class DadosPessoa {
         this.cpf = cpf;
     }
 
+    public abstract String obterEtiquetaEndereco();
+
+    public abstract void imprimirEtiquetaEndereco();
     
 }

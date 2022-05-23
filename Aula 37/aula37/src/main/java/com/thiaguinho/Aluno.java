@@ -17,6 +17,18 @@ public class Aluno extends DadosPessoa {
     public void setNotas(double[] notas) {
         this.notas = notas;
     }
+    @Override
+    public String obterEtiquetaEndereco() {
+        String s = "Endereço do Aluno: ";
+        s += super.getEndereco();
+        
+        return s
+        ;
+    }
+    @Override
+    public void imprimirEtiquetaEndereco() {
+        System.out.println(this.obterEtiquetaEndereco());
+    }
 
     
 }

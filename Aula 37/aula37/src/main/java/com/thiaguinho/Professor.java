@@ -17,6 +17,18 @@ public class Professor extends DadosPessoa {
     public void setNomeCurso(String nomeCurso) {
         this.nomeCurso = nomeCurso;
     }
+    @Override
+    public String obterEtiquetaEndereco() {
+
+        String s = "Endereço do Professor: ";
+        s += super.getEndereco();
+        
+        return s;
+    }
+    @Override
+    public void imprimirEtiquetaEndereco() {
+        System.out.println(this.obterEtiquetaEndereco());
+    }
 
     
 }

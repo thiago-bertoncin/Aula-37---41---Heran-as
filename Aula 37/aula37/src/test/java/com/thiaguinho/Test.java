@@ -7,11 +7,13 @@ public class Test {
 
         DadosPessoa aluno = new Aluno();
         aluno.setNome("Thiago");
+        aluno.setEndereco("Rua roxo moreira, 1111");
 
-        System.out.println(aluno.getNome());
+        DadosPessoa professor = new Professor();
+        professor.setEndereco("Rua Shigeo Mori, 2222");
 
-        System.out.println("teste 3"); 
-
-
+        aluno.imprimirEtiquetaEndereco();
+        professor.imprimirEtiquetaEndereco();
+        
     }
 }
