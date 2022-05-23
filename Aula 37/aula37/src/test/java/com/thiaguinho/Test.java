@@ -7,8 +7,10 @@ public class Test {
 
         DadosPessoa aluno = new Aluno();
         aluno.setNome("Thiago");
-        
+
         System.out.println(aluno.getNome());
+
+        System.out.println("teste 2");
 
     
     }
