@@ -1,5 +1,7 @@
 package com.thiaguinho;
 
+import java.util.Arrays;
+
 public class Aluno extends DadosPessoa {
     
     private String curso;
@@ -29,6 +31,11 @@ public class Aluno extends DadosPessoa {
     public void imprimirEtiquetaEndereco() {
         System.out.println(this.obterEtiquetaEndereco());
     }
+    @Override
+    public String toString() {
+        return "Aluno [curso=" + curso + ", notas=" + Arrays.toString(notas) + "]";
+    }
 
+    
     
 }

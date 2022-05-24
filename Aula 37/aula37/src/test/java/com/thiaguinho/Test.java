@@ -5,7 +5,7 @@ public class Test {
     
     public static void main(String[] args) {
 
-        DadosPessoa aluno = new Aluno();
+        Aluno aluno = new Aluno();
         aluno.setNome("Thiago");
         aluno.setEndereco("Rua roxo moreira, 1111");
 
@@ -14,6 +14,12 @@ public class Test {
 
         aluno.imprimirEtiquetaEndereco();
         professor.imprimirEtiquetaEndereco();
+
+        aluno.setCurso("Programação em Java");
+        double[] notas = {10, 9, 8, 7};
+        aluno.setNotas(notas);
+
+        System.out.println(aluno);
         
     }
 }
