@@ -12,12 +12,15 @@ public class ContaBancariaTest {
         contaDeTeste.setNomeCliente("Thiaguinho Simples");
 
         contaDeTeste.sacar(200);
-        System.out.println(contaDeTeste.getSaldo());
+        //System.out.println(contaDeTeste.getSaldo());
 
         contaDeTeste.depositar(34.6);
-        System.out.println(contaDeTeste.getSaldo());
+        //System.out.println(contaDeTeste.getSaldo());
 
+        System.out.println("**** Conta Bancária ****");
         System.out.println(contaDeTeste);
+
+        contaDeTeste.sacar(50);
     }
     
 

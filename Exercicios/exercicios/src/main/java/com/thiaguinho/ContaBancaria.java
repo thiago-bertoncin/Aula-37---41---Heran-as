@@ -22,16 +22,17 @@ public class ContaBancaria {
         public double getSaldo() {
             return saldo;
         }
-        public void setSaldo(int saldo) {
+        public void setSaldo(double saldo) {
             this.saldo = saldo;
         }
 
         public double sacar(double valorSacar) {
             if (saldo >= valorSacar) {
                 saldo -= valorSacar;
+                System.out.println("Saque efetuado com sucesso. Novo saldo: " + saldo);
                 return saldo;
             }
-            System.out.println("Não foi possível realizar o saque");
+            System.out.println("Não foi possível realizar o saque. Saldo insuficiente");
             return saldo;
         }
 
@@ -42,11 +43,10 @@ public class ContaBancaria {
 
         @Override
         public String toString() {
-            String s = "";
-            s += "Nome do cliente: " + nomeCliente + "\n";
-            s += "Número da conta: " + numConta + "\n";
-            s += "Saldo: " + saldo + "\n"; 
-            return s;
+            String nome = "Nome do cliente: " + nomeCliente + "\n";
+            String num= "Número da conta: " + numConta + "\n";
+            String sal = "Saldo: " + saldo + "\n"; 
+            return nome + num + sal;
         }
 
         
