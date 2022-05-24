@@ -40,6 +40,16 @@ public class ContaBancaria {
             return saldo;
         }
 
+        @Override
+        public String toString() {
+            String s = "";
+            s += "Nome do cliente: " + nomeCliente + "\n";
+            s += "Número da conta: " + numConta + "\n";
+            s += "Saldo: " + saldo + "\n"; 
+            return s;
+        }
+
+        
 
         
 }

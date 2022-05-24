@@ -6,16 +6,18 @@ public class ContaBancariaTest {
 
     public static void main(String[] args) {
         
-        ContaBancaria conta = new ContaBancaria();
-        conta.setSaldo(500);
+        ContaBancaria contaDeTeste = new ContaBancaria();
+        contaDeTeste.setSaldo(500);
+        contaDeTeste.setNumConta("11-111");
+        contaDeTeste.setNomeCliente("Thiaguinho Simples");
 
-        conta.sacar(200);
-        System.out.println(conta.getSaldo());
+        contaDeTeste.sacar(200);
+        System.out.println(contaDeTeste.getSaldo());
 
-        conta.depositar(34.6);
-        System.out.println(conta.getSaldo());
+        contaDeTeste.depositar(34.6);
+        System.out.println(contaDeTeste.getSaldo());
 
-
+        System.out.println(contaDeTeste);
     }
     
 
