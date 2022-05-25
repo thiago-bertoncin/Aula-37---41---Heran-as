@@ -18,5 +18,6 @@ public abstract class FiguraGeometrica {
         this.cor = cor;
     }
 
+
     
 }
