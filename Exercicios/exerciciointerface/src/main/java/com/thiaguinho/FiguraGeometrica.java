@@ -1,10 +1,10 @@
 package com.thiaguinho;
 
-public class FiguraGeometrica {
+public abstract class FiguraGeometrica {
     
     private String nome;
     private String cor;
-    
+
     public String getNome() {
         return nome;
     }
