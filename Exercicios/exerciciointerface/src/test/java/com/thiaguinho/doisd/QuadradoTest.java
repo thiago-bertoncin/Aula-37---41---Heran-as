@@ -14,7 +14,6 @@ public class QuadradoTest {
 
     @Test
     public void testCalcularArea() {
-        Quadrado quadrado = new Quadrado("Quadrado", 5);
-        //assertEquals(25, Quadrado.calcularArea(), 0.1);
+        //assertEquals(25, Quadrado.calcularArea());
     }
 }
